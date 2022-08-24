@@ -24,4 +24,6 @@ The data for this project come from this source: http://web.archive.org/web/2016
 
 ## Here is the link to the Rmarkdown
 
-LINK ---> file:///Users/sorennonnengart/Coursera/Data_science/tasks/course_8_Machine%20learning/machine-learning-course_task.html
+LINK:
+
+file:///Users/sorennonnengart/Coursera/Data_science/tasks/course_8_Machine%20learning/machine-learning-course_task.html
