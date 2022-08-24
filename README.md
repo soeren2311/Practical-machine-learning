@@ -19,3 +19,9 @@ The test data are available here:
 https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
 
 The data for this project come from this source: http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har.
+
+
+
+## Here is the link to the Rmarkdown
+
+LINK ---> file:///Users/sorennonnengart/Coursera/Data_science/tasks/course_8_Machine%20learning/machine-learning-course_task.html
