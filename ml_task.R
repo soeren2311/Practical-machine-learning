@@ -14,24 +14,25 @@ pdf_document: default
 ## Here you see the results of my final Coursera’s Practical Machine Learning course, as part of the Data Science 
 ## Specialization track offered by John Hopkins with coursera.
 ## In this project, I will use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants 
-## to predict the manner in which they did the exercise. This is the “classe” variable in the training set. 
-## I will train 4 models overall: Decision Trees, Random Forest, Gradient Boosted Trees, Support Vector Machine 
-## I then predict using a validation set randomly selected from the training csv data to obtain the accuracy and 
-## out of sample error rate. Based on those numbers, I decide on the best model, and use it to predict 20 cases 
-## using the test csv set. 
+## to predict the manner in which they did the exercise. 
+## I will train 4 models overall: Decision Trees, Random Forest, Gradient Boosted Trees and Support Vector Machines 
+## I then predict using a validation set randomly selected from the training csv.data to obtain the accuracy and 
+## out of sample error rate. Based on those numbers, I will take my decision based on the best model and use it to predict at least
+## 20cases using the test csv set. 
 
 
 ## Loading Data and Libraries
-#### Libraries that will to be used for the analysis
+#### The following libraries will  be used for the analysis
 library(caret)
 library(kernlab)
 library(rattle)
 library(lattice)
 library(ggplot2)
 library(corrplot)
+## set seed for reproducibility
 set.seed(318925)
 
-## create a path to my folder
+## create a path to my folder (folders are hidden because of anonymity
 path <- ".../course_8_Machine learning"
 setwd(path)
 getwd()
@@ -41,11 +42,8 @@ traincsv <- read.csv("pml-training.csv")
 testcsv <- read.csv("pml-testing.csv")
 dim(traincsv)
 dim(testcsv)
-### You can see that there are 160 variables and 19622 observations in the training set and 20 for the test dataset.
-
 
 ## Cleaning the Data now
-
 #### Removing NA's in the variables
 traincsv <- traincsv[,colMeans(is.na(traincsv)) < .9] 
 traincsv <- traincsv[,-c(1:7)] 
